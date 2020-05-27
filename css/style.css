@@ -1,0 +1,64 @@
+a{
+    color: white;
+    font-size: large;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#9bc8ec;
+    text-decoration: none;
+}
+
+[data-nav]{
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+[data-nav="2"]{
+    height: 30px;
+}
+
+[data-nav="2"] li{
+   
+    height: 3em;
+   
+}
+
+.navbar-brand{
+    color: white;
+    
+}
+
+[data-form="1"]{
+   width: 50%;
+   margin: 0 auto;
+   
+}
+
+[data-btn="gerar"]{
+   width: 100%;
+  
+}
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.originalCard{
+    display:none; 
+}
+
+.card-img-top{
+  width:200px;
+  height: 200px;
+  margin: -20px auto;
+  border: #9bc8ec double 5px;
+  border-radius:80%;  
+
+}

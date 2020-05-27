@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Randomuser</title>
+    <script src="https://kit.fontawesome.com/703a4c0f87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Random User</title>
 </head>
 <body>
+    <header data-header="1">
+        <div class="nav navbar bg-dark" data-nav="1"> 
+            <a class="navbar-brand" href="https://randomuser.me/" target="_blank">
+                <i class="fas fa-people-arrows"></i>
+                RANDOM USER
+            </a> 
+           <div>
+               <ul class="nav mr-5"data-nav="2">
+                    <li class="nav-link"><a href="#">Cards</a></li>  
+                    <li class="nav-link"><a href="#">Mural</a></li>
+                    <li class="nav-link">
+                        <a href="https://github.com/kleberMRocha" target="_blank">
+                            <strong>GitHub</strong><i class="fab fa-github-alt"></i>
+                        </a>
+                    </li>
+               </ul>
+           </div>
+        </div>
+    </header>
+    <main>
+        <section class="container-fluid">
+            <div class="">
+                <div class="p-5">
+                    <form data-form="1">
+                        <div class="form-group row">
+                          <label for="qtd" class="col-sm-2 col-form-label">Usuários</label>
+                          <div class="col-sm-10">
+                            <select  id="qtd"class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                                <option selected>Escolha a quantidade ...</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select>
+                          </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                              <button type="submit" data-btn="gerar" class="btn btn-success">Gerar</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="min-idade" class="col-sm-2 col-form-label">Idade</label>
+                            <div class="col-md-4">
+                                <input class="form-control m-1"  placeholder="Min" type="number"  id="min-idade">
+                                <input class="form-control m-1" placeholder="Max" type="number"  id="max-idade">
+                            </div>
+                            <div class="col-md-2">Genero</div>
+                            <div class="col-md-4">
+                               
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Masculino
+                                    </label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Feminino
+                                    </label>
+                                  </div>
+
+                            </div>
+                            <div class="col-md-6 p-2">  
+                            </div>
+                            <div class="col-sm-12">
+                              <button type="submit" data-btn="gerar" class="btn btn-primary">Filtrar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <section class="container cardsContainer">
+         
+        </section>
+    </main>
+    
+    <div class="card originalCard m-2 mt-3 text-center" data-card="1" style="width: 18rem;">
+        <img src="https://conteudo.imguol.com.br/blogs/174/files/2018/05/iStock-648229868-1024x909.jpg" loading="lazy" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
     
 </body>
+
+<script src="./js/index.js"></script>
 </html>
