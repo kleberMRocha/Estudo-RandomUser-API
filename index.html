@@ -31,12 +31,12 @@
     <main>
         <section class="container-fluid">
             <div class="">
-                <div class="p-5">
+                <div class="p-3">
                     <form data-form="1">
                         <div class="form-group row">
                           <label for="qtd" class="col-sm-2 col-form-label">Usuários</label>
                           <div class="col-sm-10">
-                            <select  id="qtd"class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select  id="qtd"class="custom-select my-1 mr-sm-2"  id="inlineFormCustomSelectPref">
                                 <option selected>Escolha a quantidade ...</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -52,51 +52,53 @@
                           </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-12">
-                              <button type="submit" data-btn="gerar" class="btn btn-success">Gerar</button>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
                             <label for="min-idade" class="col-sm-2 col-form-label">Idade</label>
                             <div class="col-md-4">
-                                <input class="form-control m-1"  placeholder="Min" type="number"  id="min-idade">
-                                <input class="form-control m-1" placeholder="Max" type="number"  id="max-idade">
+                                <input class="form-control m-1" data-filter="1" required placeholder="Min 22-75" type="number"  id="min-idade">
+                                <input class="form-control m-1" data-filter="2" required  placeholder="Max 22-75" type="number"  id="max-idade">
                             </div>
                             <div class="col-md-2">Genero</div>
                             <div class="col-md-4">
                                
                                 <div class="form-check form-check-inline">
                                     <label class="form-check-label">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> Masculino
+                                      <input class="form-check-input" data-filter="3" type="checkbox" id="inlineCheckbox1" value="male"> Masculino
                                     </label>
                                   </div>
                                   <div class="form-check form-check-inline">
                                     <label class="form-check-label">
-                                      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> Feminino
+                                      <input class="form-check-input"  data-filter="4" type="checkbox" id="inlineCheckbox2" value="female"> Feminino
                                     </label>
                                   </div>
-
                             </div>
-                            <div class="col-md-6 p-2">  
-                            </div>
-                            <div class="col-sm-12">
-                              <button type="submit" data-btn="gerar" class="btn btn-primary">Filtrar</button>
+                            <div class="col-md-12 p-2">  
+                                <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <button type="submit" data-btn="gerar" class="btn btn-success">Gerar</button>
+                                      </div>
+                                      <div class="col-sm-6">
+                                        <button type="button" data-btn="reset" class="btn btn-warning">Lipar</button>
+                                      </div>
+                                </div>
                             </div>
                         </div>
                         </div>
+                        
                     </form>
                 </div>
 
             </div>
         </section>
-        <section class="container cardsContainer">
-         
+        <div class="container alert">
+            
+        </div>
+        <section class="container-fluid cardsContainer">
+        <!--Cards -->       
         </section>
     </main>
     
-    <div class="card originalCard m-2 mt-3 text-center" data-card="1" style="width: 18rem;">
-        <img src="https://conteudo.imguol.com.br/blogs/174/files/2018/05/iStock-648229868-1024x909.jpg" loading="lazy" class="card-img-top" alt="...">
+    <div class="card originalCard m-2 mt-3 text-center" data-card="1" style="width: 15rem;">
+        <img src="" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
