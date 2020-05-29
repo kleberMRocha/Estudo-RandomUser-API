@@ -4,6 +4,11 @@ html {
     scroll-behavior: smooth;
   }
 
+ body{
+    font-family: 'Oswald', sans-serif;
+    
+ }
+
 a{
     color: white;
     font-size: large;
