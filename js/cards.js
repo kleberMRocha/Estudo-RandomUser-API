@@ -1,7 +1,7 @@
 let $ =  document.querySelector.bind(document);
 let $$ = document.querySelectorAll.bind(document);
 let users = 1;
-let url = 'https://randomuser.me/api/?results=0';
+let url = 'https://randomuser.me/api/?results=1';
 let btnUsers       = $('[data-btn="gerar"]');
 let btnReset       = $('[data-btn="reset"]');
 let selectQtd      = $('#qtd');
@@ -12,6 +12,10 @@ let fields         = $$('[data-filter]');
 let alertField     = $('.alert');
 let getData = (url) => {return fetch(url)};
 
+
+getData(url).then(res => res).then(res =>{
+    res.status == "200" || setMessages("Erro 503 tente mais tarde!",alertField);
+}); 
 
 selectQtd.addEventListener("change",event =>{
     users = selectQtd.selectedIndex * 100;
@@ -99,7 +103,7 @@ function setMessages(value,target){
 
     setTimeout(()=>{
     target.innerHTML = ""; 
-    },4000)
+    },5000)
    
 }
 

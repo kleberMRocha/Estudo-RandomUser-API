@@ -9,30 +9,46 @@
     <title>Random User</title>
 </head>
 <body>
+    <!--nav-->
     <header data-header="1">
-        <div class="nav navbar bg-dark" data-nav="1"> 
+        <div class="nav navbar bg-primary" data-nav="1"> 
             <a class="navbar-brand" href="https://randomuser.me/" target="_blank">
                 <i class="fas fa-people-arrows"></i>
                 RANDOM USER
             </a> 
            <div>
-               <ul class="nav mr-5"data-nav="2">
-                    <li class="nav-link"><a href="#">Cards</a></li>  
-                    <li class="nav-link"><a href="#">Mural</a></li>
+               <ul class="nav mr-5"data-nav="2" >
+                    <li class="nav-link"><a href="#card">Cards</a></li>  
+                    <li class="nav-link"><a href="#mural">Mural</a></li>
                     <li class="nav-link">
                         <a href="https://github.com/kleberMRocha" target="_blank">
-                            <strong>GitHub</strong><i class="fab fa-github-alt"></i>
+                            <strong>GitHub </strong><i class="fab fa-github-alt"></i>
                         </a>
                     </li>
                </ul>
            </div>
         </div>
     </header>
-    <main>
+        <!--Mural -->   
+    <section class="container-fluid mural" data-fun="1" id="mural">
+        <div class="galeria container-fluid row">
+             
+        </div>
+        <div class="centerW">
+            <div class="alertServer"></div>
+            <h1> Mural De Fotos</h1>   
+            <button class="btn btn-primary mt-2" data-btnGbChange="1">Mudar Fotos</button>
+        </div>
+    </section>
+
+      <!--Cards -->  
+    <main data-fun="2" class="" id="card">
         <section class="container-fluid">
             <div class="">
                 <div class="p-3">
+                    
                     <form data-form="1">
+                        <h2><i class="fas fa-users"></i> Gerar Perfil</h2>
                         <div class="form-group row">
                           <label for="qtd" class="col-sm-2 col-form-label">Usuários</label>
                           <div class="col-sm-10">
@@ -89,29 +105,33 @@
 
             </div>
         </section>
-        <div class="container alert">
-            
+        <div class="container alert">   
         </div>
-        <section class="container-fluid cardsContainer">
-        <!--Cards -->       
+        <section class="container-fluid cardsContainer">     
         </section>
     </main>
-    
-    <div class="card originalCard m-2 mt-3 text-center" data-card="1" style="width: 15rem;">
+
+
+  <!-- template Elements -->
+     <!--img clone--> 
+     <img src="" style="display:none"  class="img-original img-fluid" alt="">
+    <!--CardsClone -->  
+     <div class="card originalCard m-2 mt-3 text-center" data-card="1" style="width: 15rem;">
         <img src="" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
+          <li class="list-group-item"></li>
         </ul>
-      </div>
-    
+    </div>
 </body>
 
-<script src="./js/index.js"></script>
+<script src="./js/cards.js"></script>
+<script src="./js/mural.js"></script>
+<script src="./js/nav.js"></script>
 </html>
