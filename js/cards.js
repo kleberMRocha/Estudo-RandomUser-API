@@ -28,6 +28,10 @@ btnUsers.addEventListener("click",event =>{
         setMessages("Selecione: Idade Min e Max e quantidade de usuários",alertField)
         return;
     }
+    if(fields[0].value  >  fields[1].value){
+        setMessages("Idade minima deve ser menor que idade maxima",alertField)
+        return; 
+    }
     if(fields[0].value >= 76 || fields[1].value >= 76){
         setMessages("Idade Maxima 75",alertField)
         return;
@@ -56,6 +60,7 @@ function filterUser(arr,fields){
 
     let AgeMin = fields[0].value;
     let AgeMax = fields[1].value;
+
     let filtro = [];
     arr.forEach(element => {
         if((element.gender == genderM || element.gender == genderF)
